@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
 
-import { ActionsArea, Board } from "./components";
+import { ActionsArea, Board, Info } from "./components";
 
 const Layout = ({ classes, actions }) => (
   <Grid
@@ -21,6 +21,7 @@ const Layout = ({ classes, actions }) => (
       </div>
       <ActionsArea actions={actions} />
     </Grid>
+    <Info />
   </Grid>
 );
 
