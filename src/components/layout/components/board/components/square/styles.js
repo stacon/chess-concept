@@ -1,4 +1,4 @@
-const styles = ({ palette }) => ({
+const styles = ({ palette, breakpoints }) => ({
   "@global": {
     "@keyframes pulse": {
       "0%": {
@@ -21,8 +21,13 @@ const styles = ({ palette }) => ({
     justifyContent: "center",
     margin: 2,
     border: "2px solid transparent",
-    minHeight: 60,
-    minWidth: 60,
+    minHeight: "5rem",
+    minWidth: "5rem",
+
+    [breakpoints.down("sm")]: {
+      minHeight: "2rem",
+      minWidth: "2rem",
+    },
   },
   darkBackground: {
     backgroundColor: palette.grey[100],
