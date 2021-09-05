@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/chess-concept/static/js/main.ff525cf3.chunk.js",
+    "main.js.map": "/chess-concept/static/js/main.ff525cf3.chunk.js.map",
+    "runtime-main.js": "/chess-concept/static/js/runtime-main.80c0ad0f.js",
+    "runtime-main.js.map": "/chess-concept/static/js/runtime-main.80c0ad0f.js.map",
+    "static/js/2.e1906b96.chunk.js": "/chess-concept/static/js/2.e1906b96.chunk.js",
+    "static/js/2.e1906b96.chunk.js.map": "/chess-concept/static/js/2.e1906b96.chunk.js.map",
+    "static/js/3.c8d8158f.chunk.js": "/chess-concept/static/js/3.c8d8158f.chunk.js",
+    "static/js/3.c8d8158f.chunk.js.map": "/chess-concept/static/js/3.c8d8158f.chunk.js.map",
+    "index.html": "/chess-concept/index.html",
+    "static/js/2.e1906b96.chunk.js.LICENSE.txt": "/chess-concept/static/js/2.e1906b96.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80c0ad0f.js",
+    "static/js/2.e1906b96.chunk.js",
+    "static/js/main.ff525cf3.chunk.js"
+  ]
+}
