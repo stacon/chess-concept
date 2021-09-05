@@ -1,0 +1,13 @@
+{
+  "short_name": "Chess Concept",
+  "name": "Chess Concept",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"  
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}
