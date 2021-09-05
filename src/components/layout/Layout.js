@@ -21,7 +21,9 @@ const Layout = ({ classes, actions }) => (
       </div>
       <ActionsArea actions={actions} />
     </Grid>
-    <Info />
+    <div className={classes.infoContainer}>
+      <Info />
+    </div>
   </Grid>
 );
 

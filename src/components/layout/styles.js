@@ -1,12 +1,15 @@
 const styles = () => ({
   container: {
-    minHeight: "100vh",
+    minHeight: "90vh",
   },
   boardAreaContainer: {
     margin: "0 auto",
   },
   boardContainer: {
-    marginBottom: 10,
+    marginBottom: "1rem",
+  },
+  infoContainer: {
+    marginBottom: 0,
   },
 });
 
