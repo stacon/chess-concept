@@ -28,19 +28,24 @@ const onSquareClickedEpic = (action$, state$) =>
     pluck("payload"),
     filter(() => status(state$.value) !== GAME_STATUS.NOT_STARTED),
     map((clickedSquareId) => {
-      if (status(state$.value) === GAME_STATUS.SELECTING_STARTING_POSITION) {
+      const isPlacingPawn =
+        status(state$.value) === GAME_STATUS.SELECTING_STARTING_POSITION;
+      const isSelectingPiece =
+        status(state$.value) === GAME_STATUS.PLAYING &&
+        !selectedSquare(state$.value);
+      const isMovingPiece =
+        status(state$.value) === GAME_STATUS.PLAYING &&
+        selectedSquare(state$.value);
+
+      if (isPlacingPawn) {
         return onPlacePawn(clickedSquareId);
       }
-      if (
-        status(state$.value) === GAME_STATUS.PLAYING &&
-        !selectedSquare(state$.value)
-      ) {
+
+      if (isSelectingPiece) {
         return selectPiece(clickedSquareId);
       }
-      if (
-        status(state$.value) === GAME_STATUS.PLAYING &&
-        selectedSquare(state$.value)
-      ) {
+
+      if (isMovingPiece) {
         return movePiece(clickedSquareId);
       }
     })

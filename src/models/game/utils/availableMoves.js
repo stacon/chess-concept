@@ -8,13 +8,10 @@ const availableMoves = (squareId, board) => {
   const { y, x } = squareCoordinates(squareId);
   const { piece } = board[y][x];
 
-  switch (piece) {
-    case PIECES.WHITE.PAWN: {
-      return whitePawn(y, x, boardCopy);
-    }
-    default:
-      return [];
+  if (piece === PIECES.WHITE.PAWN) {
+    return whitePawn(y, x, boardCopy);
   }
+  return [];
 };
 
 export { availableMoves };
