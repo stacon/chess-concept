@@ -8,5 +8,5 @@
 
 ## How to play
 
-- Go to: https://github.com/stacon/chess-concept
+- Go to: https://stacon.github.io/chess-concept/
 - Click 'Place Pawn'
